@@ -21,9 +21,16 @@
             <p>UPPER:{{ upper }}</p>
             <p>LOWER:{{ lower }}</p>
         </div>
-        <!--  -->
+        <!-- Event -->
+        <div id="clickEvent" class="">
+            <button v-on:click="onclick()">BUTTON</button>
+            <!-- <button @click="onClick()">BUTTON</button> -->
+            <p>{{clickTime}}</p>
+        </div>
     <!-- script -->
     <script src="js/static.js"></script>
     <script src="js/upandlower.js"></script>
+    <script src="js/clickTime.js"></script>
+
     </body>
 </html>
