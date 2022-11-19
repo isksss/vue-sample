@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Vue Sample</title>
+        <link rel="stylesheet" href="css/style.css">
         <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29/dist/vue.global.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     </head>
 
     <body>
@@ -11,9 +13,17 @@
             <p>現在時刻: {{ current.toLocaleString() }}</p>
         </div>
     <!-- 本体 -->
-
+        <!-- 入力された項目をUpper & Lower するやつ -->
+        <div id="upAndLow" class="hide">
+            <label>NAME:
+                <input type="text" v-model="name">
+            </label>
+            <p>UPPER:{{ upper }}</p>
+            <p>LOWER:{{ lower }}</p>
+        </div>
+        <!--  -->
     <!-- script -->
     <script src="js/static.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/upandlower.js"></script>
     </body>
 </html>
