@@ -22,15 +22,24 @@
             <p>LOWER:{{ lower }}</p>
         </div>
         <!-- Event -->
-        <div id="clickEvent" class="">
+        <div id="clickEvent" class="flex btn">
             <button v-on:click="onclick()">BUTTON</button>
             <!-- <button @click="onClick()">BUTTON</button> -->
             <p>{{clickTime}}</p>
+        </div>
+        <!-- form --><br>
+        <div id="formVmodel">
+            <form action="">
+                <label for="name">NAME:</label>
+                <input type="text" id="name" v-model="myName">
+            </form>
+            <div>Hi, {{myName}}!!</div>
         </div>
     <!-- script -->
     <script src="js/static.js"></script>
     <script src="js/upandlower.js"></script>
     <script src="js/clickTime.js"></script>
+    <script src="js/form.js"></script>
 
     </body>
 </html>
