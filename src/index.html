@@ -13,33 +13,16 @@
             <p>現在時刻: {{ current.toLocaleString() }}</p>
         </div>
     <!-- 本体 -->
-        <!-- 入力された項目をUpper & Lower するやつ -->
-        <div id="upAndLow" class="hide">
-            <label>NAME:
-                <input type="text" v-model="name">
-            </label>
-            <p>UPPER:{{ upper }}</p>
-            <p>LOWER:{{ lower }}</p>
+        <!-- コンポーネント -->
+        <div id="my-comp">
+            <my-comp></my-comp>
         </div>
-        <!-- Event -->
-        <div id="clickEvent" class="flex btn">
-            <button v-on:click="onclick()">BUTTON</button>
-            <!-- <button @click="onClick()">BUTTON</button> -->
-            <p>{{clickTime}}</p>
-        </div>
-        <!-- form --><br>
-        <div id="formVmodel">
-            <form action="">
-                <label for="name">NAME:</label>
-                <input type="text" id="name" v-model="myName">
-            </form>
-            <div>Hi, {{myName}}!!</div>
+        <div id="my-comp2">
+            <my-comp2></my-comp2>
         </div>
     <!-- script -->
     <script src="js/static.js"></script>
-    <script src="js/upandlower.js"></script>
-    <script src="js/clickTime.js"></script>
-    <script src="js/form.js"></script>
+    <script src="js/comp.js"></script>
 
     </body>
 </html>
